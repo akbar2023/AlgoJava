@@ -6,7 +6,7 @@ public class SayAa {
 
         SayAa say = new SayAa();
         try {
-            say.sayAaa("aaa");
+            sayAaa("aaa");
         } catch (RuntimeException e){
             System.out.println(e.getMessage());
         }
