@@ -2,16 +2,35 @@ package algorithms;
 
 public class TwinNumber {
 
-    public static void main(String[] args) {
+    public boolean isATwinNumber(int localNumber, int foreignNumber) {
 
-    }
+        StringBuilder sb = new StringBuilder();
+        StringBuilder sb2 = new StringBuilder();
 
-    public static boolean isATwinNumber(String localNumber, String foreignNumber) {
-        String first[];
-        first = localNumber.split("");
-        for(int i = 0; i < first.length; i++) {
-            System.out.println(i);
-        }
+        sb.append(localNumber);
+        sb2.append(foreignNumber);
+
+        String numberA = sb.toString();
+        String numberB = sb2.toString();
+
+
+        if (numberA.length() == numberB.length()) {
+            String[] split1 = {};
+            String[] split2 = {};
+            for (int i = 0; i < numberA.length(); i++) {
+                split1 = numberA.split("");
+                split2 = numberB.split("");
+            }
+            for(String a : split1) {
+                for(int j = 0; j < numberA.length(); j++) {
+                    if(a.equals(split2[j])) {
+                        System.out.println();
+                        return true;
+                    }
+                }
+            }
             return true;
+        }
+        return true;
     }
 }
