@@ -2,10 +2,10 @@ package algorithms;
 
 public class OneDay {
 
-    public static void main(String[] args) {
-        OneDay oneDay = new OneDay();
-        System.out.println(oneDay.findDay("Dimanche", 3));
-    }
+//    public static void main(String[] args) {
+//        OneDay oneDay = new OneDay();
+//        System.out.println(oneDay.findDay("Dimanche", 3));
+//    }
 
     public static String findDay(String today, int offset) {
 
